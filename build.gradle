@@ -40,6 +40,8 @@ dependencies {
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
     runtimeOnly("com.h2database:h2")
     implementation("org.postgresql:postgresql:42.2.18.jre7")
+//    implementation("io.micronaut.configuration:micronaut-hibernate-gorm")
+
 }
 
 

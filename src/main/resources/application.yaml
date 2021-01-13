@@ -12,7 +12,18 @@ datasources:
         url: jdbc:postgresql://localhost:5432/micronaut
         username: micronaut
         password: micronaut
+        enable: true
+
+flyway:
+    datasources:
+        default:
+            enabled: true
+            locations:
+                - classpath: db/migration
 
 endpoints:
     health:
         details-visible: anonymous
+    flyway:
+        enabled: true
+        sensitive: false

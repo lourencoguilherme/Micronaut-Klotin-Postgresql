@@ -20,3 +20,10 @@
 
 - [Micronaut Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
 
+## How to up postgresql and pgadmin with docker-compose
+   build run:
+    docker-compose -f docker-compose-yml up
+   up in: http://localhost:5050
+    use default email login: pgadmin4@pgadmin.org
+    use default email password: admin
+    then connect container direct bridge to facilitate use the stance name micronaut and password micronaut 
