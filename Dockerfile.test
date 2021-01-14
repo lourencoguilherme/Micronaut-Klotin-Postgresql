@@ -1,0 +1,11 @@
+FROM gradle:6.7.0-jdk11
+
+ENV ROOT_FOLDER demomicronaut
+
+USER root
+RUN mkdir /$ROOT_FOLDER && chown -R gradle:gradle /$ROOT_FOLDER
+
+USER root
+COPY --chown=gradle:gradle . /$ROOT_FOLDER
+
+WORKDIR $ROOT_FOLDER
